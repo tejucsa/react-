@@ -1,0 +1,80 @@
+
+.expense-form-container {
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.expense-form-container h2 {
+  margin-top: 0;
+  color: #166534;
+}
+
+.expense-form-container form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: 2px solid #86efac;
+  border-color: #16a34a;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+
+.submit-button,
+.cancel-button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submit-button {
+  background-color: #15803d;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #64748b;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .expense-form-container form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-buttons {
+    align-items: stretch;
+  }
+}
